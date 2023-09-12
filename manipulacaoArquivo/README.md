@@ -18,6 +18,7 @@ A função fopen recebe dois parâmetros:
 * o método de abertura
 Busca no disco pelo arquivo. O arquivo é carregado do disco em um espaço em memória chamado buffer
 É muito mais rápido manipular o arquivo em memória que em disco
+
 | Mode | Description |
 | ------ | ------ |
 | "r" | Opens a file for reading. The file must exist. |
