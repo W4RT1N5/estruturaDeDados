@@ -1,6 +1,6 @@
-/* Escrever umm programa que leia um arquivo e conte quantos caracteres, espaços,  tabs, e newlines estão presentes
-espaco = " "
-tabs = "    "
+/* Escrever umm programa que leia um arquivo e conte quantos caracteres, espacos,  tabs, e newlines estao presentes
+espaco = 32
+tabs = tabulacao
 newlines = "\n"
 */
 
@@ -20,9 +20,11 @@ int main(){
             tabs++;
         } else if (ch == 10){
             newlines++;
+        } else if (ch >= 33 && ch <= 126){
+            caracteres++;
         }
     }
     fclose(fp);
-    printf("Espacos: %d\nTabs: %d\nNewlines: %d\n", espacos, tabs, newlines);
+    printf("Caracteres: %d\nEspacos: %d\nTabs: %d\nNewlines: %d\n\t", caracteres, espacos, tabs, newlines);
     return 0;
 }
