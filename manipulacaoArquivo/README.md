@@ -33,7 +33,7 @@ Busca no disco pelo arquivo. O arquivo é carregado do disco em um espaço em me
 FILE *fp;
 fp = fopen("arquivo","r");
 ```
-caso a abertura falha, a função fopen() retorna um valor NULL
+Caso a abertura falha, a função `fopen()` retorna um valor NULL
 
 ### Leitura de um arquivo
 O `fgetc(ponteiro)` retorna o primeiro byte e aponta o ponteiro para o próximo byte
