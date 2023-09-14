@@ -13,7 +13,7 @@ int  main(){
 }
 ```
 ### Abertura de arquivo
-A função `fopen()` recebe dois parâmetros:
+A função `fopen(arquivo, metodo)` recebe dois parâmetros:
 * o arquivo que será aberto com a extensão
 * o método de abertura
 
@@ -36,7 +36,7 @@ fp = fopen("arquivo","r");
 caso a abertura falha, a função fopen() retorna um valor NULL
 
 ### Leitura de um arquivo
-O `fgetc()` retorna o primeiro byte e aponta o ponteiro para o próximo byte
+O `fgetc(ponteiro)` retorna o primeiro byte e aponta o ponteiro para o próximo byte
 ```c
 char ch = fgetc(fp);
 ```
@@ -48,3 +48,49 @@ Realiza três operações:
 ```c
 fclose(fp);
 ```
+
+### Escrita de um arquivo
+A função `fputc(caractere, ponteiro)` é usada para escrever um caractere em um arquivo e recebe dois parâmetros:
+* variável caractere
+* ponteiro que aponta para o arquivo
+
+```c
+fputc(ch, fp);
+```
+Nesse caso, o modo de abertura do arquivo não pode ser o "r"
+
+A função `fputs(string, ponteiro)` escreve uma string e recebe dois parâmetros:
+* a string
+* o ponteiro que aponta para o arquivo
+```c
+FILE *fp;
+char s[80];
+fp = fopen ("arquivo.txt", "w");
+printf("Digite uma string\n");
+while(strlen(gets(s))>0){
+    fputs(s, fp);
+    fputs("\n", fp);
+}
+```
+
+### Lendo uma string
+A função `fgets(string, tamanho, ponteiro)` recebe três parâmetros:
+* A variável string
+* O tamanho da string
+* O ponteiro que aponta para o arquivo
+
+```c
+FILE *fp;
+char s[80];
+fopen("arquivo.txt", "r");
+fgets(s, 79, fp)
+```
+
+### Outras funções
+A função `fprint()` usada para printar no arquivo e a função `fscanf()` usada para escanear o arquivo
+```c
+fprintf(fp, "%s %d %f", s, num, num2);
+fscanf(fp, "%s %d %f", s, &num, &num2);
+```
+
+A função `fflush(stdin)` limpa o buffer da entrada padrão

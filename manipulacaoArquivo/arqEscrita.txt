@@ -1,0 +1,4 @@
+Este e um arquivo exemplo para o exercicio de copia de um arquivolinha de teste
+ 
+nova linha
+	
