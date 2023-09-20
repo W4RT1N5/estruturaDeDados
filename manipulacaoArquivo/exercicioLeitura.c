@@ -9,7 +9,7 @@ int main(){
     FILE *fp;
     char ch;
     int caracteres=0, espacos=0, tabs=0, newlines = 0;
-    fp = fopen("exercicio.c", "r");
+    fp = fopen("exercicioLeitura.c", "r");
     while(1){
         ch = fgetc(fp); // devolve um caractere e descola um byte (atualiza o ponteiro fp)
         if(ch == EOF){
