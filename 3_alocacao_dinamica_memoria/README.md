@@ -46,7 +46,8 @@ Obs: ao alocar memória, também é necessário liberá-la antes de encerrar o p
 Controle do uso de memória: uso sob demanda
 #### Cuidado: 
 Gerenciar lixo de memória
-## malloc
+## Vetores Dinâmicos
+### malloc
 ```c
 # include <stdlib.h>
 void *malloc(size_t tamanho);
@@ -57,7 +58,7 @@ void *malloc(size_t tamanho);
 int *numero = (int *) malloc(sizeof(int)* tamanho);
 // esse (int *) é um cast, pois malloc retorna um ponteiro void
 ```
-## calloc
+### calloc
 ```c
 # include <stdlib.h>
 void *calloc(size_t qtd, size_t tamanho);
@@ -69,7 +70,7 @@ void *calloc(size_t qtd, size_t tamanho);
 int *numero = (int *) calloc(qtd, sizeof(int));
 // preenche com 0
 ```
-## free
+### free
 Para desalocação de memória	
 ```c
 # include <stdlib.h>
