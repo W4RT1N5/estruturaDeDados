@@ -58,7 +58,8 @@ bool removeFloat(float pv, float *pvalores, int pcapacidade, int *ptamanho){
     }
     return true;
 }
-bool EIgual(int *pveta, int ptama, int *pvetb, int ptamb){
+// função que retorna verdadeiro se dois vetores de inteiros forem iguais
+bool Eigual(int *pveta, int ptama, int *pvetb, int ptamb){
     int cont = 0;
     if (ptama == ptamb){
         for (int i=0; i < ptama; i++){
@@ -131,6 +132,6 @@ int main(){
    int tama = 3;
    int vet[9] = {7,3,4};
    int tamb = 3;
-   printf("%d\n", EIgual(vetor, tama, vet, tamb));
+   printf("%d\n", Eigual(vetor, tama, vet, tamb));
     return 0;
 }
