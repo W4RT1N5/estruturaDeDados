@@ -74,6 +74,21 @@ bool Eigual(int *pveta, int ptama, int *pvetb, int ptamb){
     }
     return false;
 }
+void somatorio(){
+    int n;
+    scanf("%d", &n);
+    int *vetor = (int *) malloc(sizeof(int) * n);
+    for (int i=0; i < n; i++){
+        scanf("%d", &vetor[i]);
+    }
+    float soma = 0;
+    int numeradorMenor = 0;
+    for (int i=0; i < n; i++){
+        soma = soma + (float) i/vetor[i];
+        if (i < vetor[i]) numeradorMenor++;
+    }
+    printf("Soma da serie = %.2f\nQuantidades de termos da serie que tem o numerador inferior ao denominador = %d", soma, numeradorMenor);
+}
 
 
 int main(){
@@ -128,10 +143,13 @@ int main(){
     }
     printf("\nocup atual: %d\n", ocup);
     */
+   /* Função Eigual que verifica se dois vetores de inteiros são iguais
    int vetor[6] = {3,4,7};
    int tama = 3;
    int vet[9] = {7,3,4};
    int tamb = 3;
    printf("%d\n", Eigual(vetor, tama, vet, tamb));
+    */
+   somatorio();
     return 0;
 }
