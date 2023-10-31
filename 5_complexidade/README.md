@@ -68,3 +68,67 @@ sempre, no mínimo, tão grande quanto T(N).
 
 ### Observação
 As funções n², $\frac{3}{2}$ n², n²+100n pertencem a mesma ordem. Para volores enormes de n, essas funções crescem com a mesma velocidade. Assim, podemos não considerar constantes ou termos de ordens baixas
+
+## Regras de Análise
+### Instruções Simples
+```c
+int x;
+float y;
+x = 1;
+y = 1.0 + x;
+```
+Qualquer desses comandos, a não ser que esteja dentro de um laço, será executado uma única vez. Ou seja, não dependem do volume de entrada. Portanto, dizemos que **esses comandos têm ordem de complexidade constante, ou O(1)**
+
+### Lações de Repetição
+#### Tempo Constante
+```c
+for (i=0;i<10;i++)
+{
+ vetor[i] = i;
+ vetor[i+1] = x;
+}
+```
+Como o tempo é constante (independente do volume de dados de entrada), **dizemos que a complexidade é O(1)**
+
+#### Laços Simples
+```c
+for (i=0;i<n;i++)
+{
+ vetor[i] = i;
+ vetor[i+1] = x;
+}
+```
+Nesse caso, o tempo depende de n. Logo, dizemos que **a complexidade é O(n)**
+#### Lações Aninhados
+```c
+for (i=0;i<n;i++)
+{
+ for (j=0;j<n;j++)
+ {
+ k = k + i*j;
+ }
+}
+```
+![Alt text](lacosAninhados.png)
+Aqui a complexidade é O($n^2$)
+### Algoritmos O($log_{2}n$)
+```c
+int lo = 0, mid, hi = n - 1;
+while (lo <= hi)
+{
+ mid = (lo + hi)/2;
+ if (key < a[mid])
+ hi = mid - 1;
+ else if (key > a[mid])
+ lo = mid + 1;
+ else
+ return mid;
+}
+return -1;
+```
+![Alt text](complexidadeLogN.png)
+
+### Observação
+Quando o tempo de resposta de um algoritmo depende também da configuração dos dados de entrada, podemos ter as seguintes análises:
+- Melhor caso: menor tempo de execuçãp
+- Pior caso: maior tempo de execução. Geralmente, a prioridade é mostrar o pior caso
