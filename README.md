@@ -6,3 +6,5 @@ Esse repositório é destinado para a disciplina Estrutura de Dados e Algoritmos
 3. [Alocação dinâmica de memória](https://github.com/W4RT1N5/estruturaDeDados/tree/main/3_alocacao_dinamica_memoria)
 4. [Recursividade](https://github.com/W4RT1N5/estruturaDeDados/tree/main/4_recursividade)
 5. [Complexidade](https://github.com/W4RT1N5/estruturaDeDados/tree/main/5_complexidade)
+6. [Busca](https://github.com/W4RT1N5/estruturaDeDados/tree/main/6_algoritmos_buscas)
+7. [Ordenação](https://github.com/W4RT1N5/estruturaDeDados/tree/main/7_ordenação)
