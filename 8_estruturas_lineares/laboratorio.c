@@ -68,20 +68,16 @@ void identifica_formacao(char x[])
     p = (pilha *) malloc(sizeof(pilha));
     p->prox = NULL;
     for (int i=0; x[i] != '\0'; i++){
-        // printf("%c", x[i]);
         if (x[i] == '(' || x[i] == '{'){
             p = empilhar(p, x[i]);
-            printf("%c\n", x[i]);
         }
         else if (x[i] == ')' || x[i] == '}'){
             if (forma_par(x[i], p->caracter) == 1){
                 printf("certo\n");
                 p = desempilhar(p);
-                printf("%c\n", x[i]);
 
             } else {
                 printf("erro\n");
-
             }
         }
     }
