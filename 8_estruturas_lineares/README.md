@@ -99,7 +99,7 @@ TNo *ExcluiCalda(TNo *pLista){
 TNo *ExcluiChave(TNo *pLista, int pChave){
     TNo *pAnt, *pPost;
     pAnt = pLista;
-    while (pAnt->Prox->Numero != pChave)
+    while (pAnt->Prox->dado != pChave)
         pAnt = pAnt->Prox;
     pPost = pAnt->Prox->Prox;
     free(pAnt->Prox);
