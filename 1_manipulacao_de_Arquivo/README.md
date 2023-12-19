@@ -1,3 +1,4 @@
+[Voltar à página inicial](../README.md#sumário)
 # Manipulação de arquivos
 ## Operações com arquivos
 * criação de um novo arquivo

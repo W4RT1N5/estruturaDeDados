@@ -1,3 +1,4 @@
+[Voltar à página inicial](../README.md#sumário)
 # Introdução a Ponteiros
 É uma variável que armazena o endereço de memória de outra variável. Um ponteiro ocupa 8 bytes na memória.
 Os ponteiros são declarados usando a seguinte sintaxe:

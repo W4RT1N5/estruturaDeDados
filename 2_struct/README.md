@@ -1,3 +1,4 @@
+[Voltar à página inicial](../README.md#sumário)
 # Struct
 Struct é uma estrutura de dados composta que define fisicamente uma lista de variáveis agrupadas sob um único nome em um bloco de memória.  
 

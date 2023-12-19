@@ -1,3 +1,4 @@
+[Voltar à página inicial](../README.md#sumário)
 # Recursividade
 Uma função recursiva é um função que resolve parte de um problema, e para continuar chama ela mesma.  
 ## Exemplo: Fatorial

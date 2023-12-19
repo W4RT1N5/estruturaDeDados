@@ -1,3 +1,4 @@
+[Voltar à página inicial](../README.md#sumário)
 # Ordenação
 Encontrar um dado específico em um conjunto ordenado requer menos esforço computacional do que se o conjunto estiver desordenado.
 

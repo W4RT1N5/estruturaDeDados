@@ -1,3 +1,4 @@
+[Voltar à página inicial](../README.md#sumário)
 # Buscas
 
 ## Conceitos Iniciais

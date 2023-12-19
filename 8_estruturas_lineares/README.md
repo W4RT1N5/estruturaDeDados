@@ -1,3 +1,5 @@
+[Voltar à página inicial](../README.md#sumário)
+
 Relação de ordem
 
 # Listas Encadeadas
